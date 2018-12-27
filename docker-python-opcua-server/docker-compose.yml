@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    uaserver:
+        container_name: uaserver
+        build:
+            context: .
+        ports:
+            - 4840:4840
+        restart: "no"

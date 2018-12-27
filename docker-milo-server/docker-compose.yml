@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    miloserver:
+        container_name: miloserver
+        build:
+            context: .
+        ports:
+            - 4840:12686
+        restart: "no"

@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    opcfoundationserver:
+        container_name: opcfoundationserver
+        build:
+            context: .
+        ports:
+            - 8666:8666
+        restart: "no"

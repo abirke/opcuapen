@@ -1,0 +1,20 @@
+diff --git a/examples/basic/pom.xml b/examples/basic/pom.xml
+index 5ab6992..c25c41c 100644
+--- a/examples/basic/pom.xml
++++ b/examples/basic/pom.xml
+@@ -39,7 +39,7 @@
+   	<dependency>
+   		<groupId>org.bouncycastle</groupId>
+   		<artifactId>bcpkix-jdk15on</artifactId>
+-  		<version>1.54</version>
++  		<version>1.60</version>
+   		<scope>runtime</scope>
+   	</dependency>
+   </dependencies>
+@@ -131,4 +131,4 @@
+   		</plugin>
+   	</plugins>
+   </build>
+-</project>
+\ No newline at end of file
++</project>

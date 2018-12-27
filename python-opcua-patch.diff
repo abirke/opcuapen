@@ -1,0 +1,15 @@
+diff --git a/opcua/client/ua_client.py b/opcua/client/ua_client.py
+index aa2a2d1..877f093 100644
+--- a/opcua/client/ua_client.py
++++ b/opcua/client/ua_client.py
+@@ -111,6 +111,10 @@ class UASocketClient(object):
+             self._call_callback(0, msg)
+         elif isinstance(msg, ua.ErrorMessage):
+             self.logger.warning("Received an error: %s", msg)
++            for callback in self._callbackmap:
++                future = self._callbackmap.get(callback, None)
++                future.set_result(msg)
++            self._callbackmap.clear()
+         else:
+             raise ua.UaError("Unsupported message type: %s", msg)
+ 

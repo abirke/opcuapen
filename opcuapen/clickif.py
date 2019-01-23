@@ -24,7 +24,13 @@ logger = logging.getLogger(__name__)
 @click.option('-v', '--verbose', count=True)
 @click.pass_context
 def cli(ctx, config, verbose):
-    """ OPCUApen - Testing tool for Chosen Ciphertext Attacks against implementations of OPC UA """
+    """ OPCUApen - Testing tool for Chosen Ciphertext Attacks against implementations of OPC UA
+
+    OPCUApen  Copyright (C) 2018  André Birke
+    This program comes with absolutely no warranty.
+    This is free software, and you are welcome to redistribute it
+    under the conditions of GNU General Public License v3.0.
+    """
     # set log level
     log_level = logging.ERROR
     if verbose == 1:

@@ -17,7 +17,7 @@ setup(
     url='https://github.com/abirke/opcuapen',
     author='André Birke',
     author_email='abirke@campus.uni-paderborn.de',
-    license='Proprietary',
+    license='GNU GPLv3',
 
     python_requires='>=3',
 
@@ -47,7 +47,7 @@ setup(
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Console',
         'Intended Audience :: Science/Research',
-        'License :: Other/Proprietary License',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Programming Language :: Python :: 3',
         'Topic :: Security',
     ],

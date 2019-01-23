@@ -1,6 +1,6 @@
 # OPCUApen
 
-A testing tool for attacks against cryptography usage in implementations of OPC UA
+A testing tool for attacks against cryptography usage in implementations of OPC UA (GNU GPLv3-licensed)
 
 ## Prerequisites
 Install the GNU Multiple Precision Arithmetic Library using Aptitude or [Homebrew](https://brew.sh/)
@@ -62,3 +62,12 @@ sphinx-apidoc --ext-mathjax -eo docs opcuapen
 cd docs
 make html
 ```
+
+## Thanks
+
+* [python-opcua](https://github.com/freeopcua/python-opcua)
+* [robot-detect](https://github.com/robotattackorg/robot-detect)
+
+## Contact
+
+* [André Birke](mailto:abirke@campus.uni-paderborn.de)

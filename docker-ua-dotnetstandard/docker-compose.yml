@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    uadotnetstandardserver:
+        container_name: uadotnetstandardserver
+        build:
+            context: .
+        ports:
+            - 51210:51210
+        restart: 'no'

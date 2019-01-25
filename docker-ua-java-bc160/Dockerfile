@@ -16,7 +16,7 @@ RUN sed -i -e "s/System.out.println(\"Press enter to shutdown\");//g" examples/b
 RUN sed -i -e "s/System.in.read();/while (true) {Thread.sleep(10000);}/g" examples/basic/src/main/java/org/opcfoundation/ua/examples/ServerExample1.java
 RUN sed -i -e "s/myServer.getApplication().close();//g" examples/basic/src/main/java/org/opcfoundation/ua/examples/ServerExample1.java
 
-ARG MAVEN_CLI_OPTS=-DskipTests 
+ARG MAVEN_CLI_OPTS=-DskipTests
 # skip tests and install ua-java stack
 RUN mvn $MAVEN_CLI_OPTS install
 # build examples

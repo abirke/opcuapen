@@ -7,4 +7,4 @@ services:
             context: .
         ports:
             - 4840:12686
-        restart: "no"
+        restart: 'no'

@@ -1,10 +1,10 @@
 version: '2'
 
 services:
-    uaserver:
-        container_name: uaserver
+    pythonopcuaserver:
+        container_name: pythonopcuaserver
         build:
             context: .
         ports:
             - 4840:4840
-        restart: "no"
+        restart: 'no'

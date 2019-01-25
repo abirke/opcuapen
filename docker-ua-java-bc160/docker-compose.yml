@@ -1,10 +1,10 @@
 version: '2'
 
 services:
-    uaserver:
-        container_name: opcfoundationserver-bc1.60
+    uajavaserver:
+        container_name: uajavaserver-bc1.60
         build:
             context: .
         ports:
             - 8666:8666
-        restart: "no"
+        restart: 'no'
